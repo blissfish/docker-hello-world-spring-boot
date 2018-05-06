@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
 @RestController
 @SpringBootApplication
 public class Application {
@@ -20,6 +21,7 @@ public class Application {
 	private final AtomicLong counter = new AtomicLong();
 
 	public static void main(String[] args) {
+		log.info("************** Starting "+Application.class.getName()+" ...");		
 		SpringApplication.run(Application.class, args);
 	}
 

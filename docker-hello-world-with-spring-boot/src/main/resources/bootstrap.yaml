@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: config-client
+
+endpoints:
+  sensitive: false
+
+server:
+  port: 8080
